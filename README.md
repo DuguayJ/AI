@@ -1,12 +1,12 @@
-# IT Security Report Template Generator
+# IT Security Report Builder
 
-Generates a `.docx` template that follows a strict internal IT security report specification with reusable Word styles, fixed color system, required section structure, and placeholder content.
+Interactive script that asks you questions and generates either:
+- a Word IT security report template (`.docx`), or
+- an Excel report worksheet (`.xlsx`).
 
 ## Install
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ## Run
@@ -14,18 +14,5 @@ pip install -r requirements.txt
 python document_builder.py
 ```
 
-Output file:
-- `output/it_security_report_template.docx`
-
-## Variables supported in code (`ReportData`)
-- `report_title`
-- `site_name`
-- `environment_name`
-- `date`
-- `classification`
-- `site_labels`
-- `section_content`
-- `recommendation_rows`
-- `status_value`
-- `next_steps`
-- `prepared_by`
+The script prompts for report title, site/environment info, status, recommendation rows, and next steps.
+Generated files are written to `output/`.
