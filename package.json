@@ -1,0 +1,8 @@
+{
+  "name": "document-builder",
+  "version": "2.0.0",
+  "description": "Universal document builder for Word and Excel",
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
